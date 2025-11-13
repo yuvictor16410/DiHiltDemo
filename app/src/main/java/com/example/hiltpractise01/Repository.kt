@@ -7,5 +7,5 @@ import jakarta.inject.Singleton
 class Repository @Inject constructor(
     val calculation: Calculation
 ){
-    fun getText() = "THE DATA FROM THE SERVER IS ${calculation.sum(102,103)}"
+    fun getText() = "THE DATA FROM THE SERVER IS: ${calculation.sum(102,103)}"
 }
